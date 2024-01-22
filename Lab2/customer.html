@@ -18,5 +18,31 @@
             </ul>
         </nav>
     </header>
+
+    <div id="Client" class="tabcontent">
+        <h3>Client Information</h3>
+        <p>What are your allergies.</p>
+          Choose a Category:
+          <select id="allergiesSelect" name="allergiesSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+          <option value=""></option>
+          <option value="No Allergies">No Allergies</option>
+          <option value="Vegetarian">Vegetarian</option>
+          <option value="Vegan">Vegan</option>
+          <option value="Lactose Intolerant">Lactose Intolerant</option>
+          <option value="Gluten Intolerant">Gluten Intolerant</option>
+          </select>
+          <br>
+          <br>
+          <p>Do you have any preference on organic products?</p>
+          Choose a Category:
+          <select id="organicSelect" name="organicSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+          <option value=""></option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+          </select>
+      </div>
+
+      
+
 </body>
 </html>
