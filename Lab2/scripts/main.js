@@ -36,29 +36,77 @@ function populateListProductChoices(slct1, slct2) {
 		
 	// obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, s1.value);
+	console.log(optionArray)
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
 		
 	for (i = 0; i < optionArray.length; i++) {
-			
-		var productName = optionArray[i];
-		// create the checkbox and add in HTML DOM
-		var checkbox = document.createElement("input");
+
+		const listItem = document.createElement('li');
+		listItem.classList.add('product');
+	
+		const img = document.createElement('img');
+		img.src = optionArray[i].imgSrc;
+		img.alt = optionArray[i].name;
+	
+		const price = document.createElement('h3');
+		price.classList.add('price');
+		price.innerHTML = `<strong>$${optionArray[i].price}</strong>`;
+
+		const checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
-		checkbox.value = productName;
-		s2.appendChild(checkbox);
+		checkbox.value = optionArray[i].name;
+	
+		const description = document.createElement('p');
+		description.classList.add('description');
+		description.textContent = optionArray[i].name
+	
+		const addToCartBtn = document.createElement('button');
+		addToCartBtn.classList.add('add-to-cart');
+		addToCartBtn.textContent = 'Add to Cart';
+
+		const quantityDiv = document.createElement('div');
+		const quantityLabel = document.createElement('label');
+		quantityLabel.textContent = "Quantity: ";
+		const quantityInput = document.createElement('input');
+		quantityInput.type = "number";
+		quantityInput.id = "quantity";
+		quantityInput.name = "quantity";
+		quantityInput.min = "0";
+		quantityInput.value = "0";
+		// quantityInput.size = "20px 20px"
+		quantityDiv.appendChild(quantityLabel);
+		quantityDiv.appendChild(quantityInput);
+
 		
-		// create a label for the checkbox, and also add in HTML DOM
-		var label = document.createElement('label')
-		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName));
-		s2.appendChild(label);
+
+		
+		listItem.appendChild(img);
+		listItem.appendChild(price);
+		listItem.appendChild(checkbox);
+		listItem.appendChild(description);
+		listItem.appendChild(quantityDiv)
+		
+
+		s2.appendChild(listItem)
+			
+		// var productName = optionArray[i];
+		// // create the checkbox and add in HTML DOM
+
+
+		// s2.appendChild(checkbox);
+		
+		// // create a label for the checkbox, and also add in HTML DOM
+		// var label = document.createElement('label')
+		// label.htmlFor = productName;
+		// label.appendChild(document.createTextNode(productName));
+		// s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
-		s2.appendChild(document.createElement("br"));    
+		// s2.appendChild(document.createElement("br"));    
 	}
 }
 	

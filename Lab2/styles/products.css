@@ -1,0 +1,36 @@
+/* Styling Container */
+.category {
+    margin-bottom: 20px;
+}
+
+/* Display the list of products as a grid */
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+}
+
+/* Styling individual products */
+.product {
+    display: grid;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    align-content: space-between
+}
+
+.description {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.price {
+    font-size: 20px;
+}
+
+/* Fixed Image Size */
+.product img {
+    max-width: 100%;
+    height: 200px;
+}

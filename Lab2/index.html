@@ -3,6 +3,7 @@
 <head>
 	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link href="styles/products.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -19,10 +20,12 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
+	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'product-list')">
+    <option value=""></option>
+    <option value="Vegetarian">Vegetarian</option>
+    <option value="Vegan">Vegan</option>
+    <option value="Lactose Intolerant">Lactose Intolerant</option>
+    <option value="Gluten Intolerant">Gluten Intolerant</option>
     <option value="None">None</option>
 	</select>
 </div>
@@ -31,7 +34,11 @@
   <h3>Your targeted products</h3>
   <p>We preselected products based on your restrictions.</p>
 	 Choose items to buy:
-	 <div id="displayProduct"></div>
+	 <div id="displayProduct">
+    <ul id="product-list">
+
+    </ul>
+   </div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.
 	</button>
