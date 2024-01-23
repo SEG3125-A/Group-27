@@ -4,7 +4,7 @@
 }
 
 /* Display the list of products as a grid */
-.product-list {
+#product-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
