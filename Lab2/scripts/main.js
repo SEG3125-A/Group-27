@@ -73,10 +73,10 @@ function populateListProductChoices(slct1, slct2) {
 		quantityLabel.textContent = "Quantity: ";
 		const quantityInput = document.createElement('input');
 		quantityInput.type = "number";
-		quantityInput.id = "quantity";
-		quantityInput.name = "quantity";
+		quantityInput.id = "quantity_" + optionArray[i].name;
+    	quantityInput.name = "quantity_" + optionArray[i].name; 
 		quantityInput.min = "0";
-		quantityInput.value = "0";
+		quantityInput.value = "1";
 		// quantityInput.size = "20px 20px"
 		quantityDiv.appendChild(quantityLabel);
 		quantityDiv.appendChild(quantityInput);
@@ -128,15 +128,23 @@ function selectedItems(){
 	para.appendChild(document.createElement("br"));
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
-			para.appendChild(document.createTextNode(ele[i].value));
-			para.appendChild(document.createElement("br"));
-			chosenProducts.push(ele[i].value);
+			var productQuantity = document.getElementById("quantity_" + ele[i].value).value;
+			var product = products.find(p => p.name === ele[i].value);
+			if (product) {
+				var totalproductPrice = product.price * productQuantity
+				para.appendChild(document.createTextNode(ele[i].value + " x " + productQuantity + " ($" + totalproductPrice.toFixed(2) + ")"));
+			} else {
+				para.appendChild(document.createTextNode(ele[i].value + " x " + productQuantity + " (Product not found)"));
+			}
+
+            para.appendChild(document.createElement("br"));
+            chosenProducts.push({name: ele[i].value, quantity: productQuantity});
 		}
 	}
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts).toFixed(2)));
 		
 }
 
