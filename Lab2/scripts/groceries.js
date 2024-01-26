@@ -116,11 +116,11 @@ var products = [
 	{
 		name: "Burpee Signature Broccoli",
 		imgSrc: 'images/broccoli.jpg',
-		vegetarian: false,
-		vegan: false,
-		lactoseIntolerant: true,
-		glutenIntolerant: true,
-		organic: true,
+		vegetarian: true,
+		vegan: true,
+		lactoseIntolerant: false,
+		glutenIntolerant: false,
+		organic: false,
 		price: 18
 	}
 ];
@@ -137,6 +137,15 @@ function restrictListProducts(prods, restriction) {
 			products_info.push(prods[i]);
 		}
 		else if ((restriction == "Gluten Intolerant") && (prods[i].glutenIntolerant == true)){
+			products_info.push(prods[i]);
+		}
+		else if ((restriction == "Vegan") && (prods[i].vegan == true)){
+			products_info.push(prods[i]);
+		}
+		else if ((restriction == "Lactose Intolerant") && (prods[i].lactoseIntolerant == true)){
+			products_info.push(prods[i]);
+		}
+		else if ((restriction == "Organic") && (prods[i].organic == true)){
 			products_info.push(prods[i]);
 		}
 		else if (restriction == "None"){

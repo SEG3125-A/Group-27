@@ -36,6 +36,7 @@ function populateListProductChoices(slct1, slct2) {
 		
 	// obtain a reduced list of products based on restrictions
     var optionArray = restrictListProducts(products, s1.value);
+	optionArray.sort((a,b) => a.price - b.price)
 	console.log(optionArray)
 
 	// for each item in the array, create a checkbox element, each containing information such as:
@@ -77,36 +78,16 @@ function populateListProductChoices(slct1, slct2) {
     	quantityInput.name = "quantity_" + optionArray[i].name; 
 		quantityInput.min = "0";
 		quantityInput.value = "1";
-		// quantityInput.size = "20px 20px"
 		quantityDiv.appendChild(quantityLabel);
 		quantityDiv.appendChild(quantityInput);
 
-		
-
-		
 		listItem.appendChild(img);
 		listItem.appendChild(price);
 		listItem.appendChild(checkbox);
 		listItem.appendChild(description);
 		listItem.appendChild(quantityDiv)
-		
 
-		s2.appendChild(listItem)
-			
-		// var productName = optionArray[i];
-		// // create the checkbox and add in HTML DOM
-
-
-		// s2.appendChild(checkbox);
-		
-		// // create a label for the checkbox, and also add in HTML DOM
-		// var label = document.createElement('label')
-		// label.htmlFor = productName;
-		// label.appendChild(document.createTextNode(productName));
-		// s2.appendChild(label);
-		
-		// create a breakline node and add in HTML DOM
-		// s2.appendChild(document.createElement("br"));    
+		s2.appendChild(listItem)   
 	}
 }
 	

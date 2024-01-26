@@ -6,14 +6,19 @@
   <link href="styles/products.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body style="font-size:x-large">
 
 <!-- Tab links, each one with an onclick event associated with it -->
-<div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-</div>
+
+<header>
+    <nav class="tab">
+        <ul>
+            <li><button class="tablinks" onclick="openInfo(event, 'Client')">Client</button></li>
+            <li><button class="tablinks" onclick="openInfo(event, 'Products')">Products</button></li>
+            <li><button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button></li>
+        </ul>
+    </nav>
+</header>
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
@@ -26,6 +31,7 @@
     <option value="Vegan">Vegan</option>
     <option value="Lactose Intolerant">Lactose Intolerant</option>
     <option value="Gluten Intolerant">Gluten Intolerant</option>
+    <option value="Organic">Organic</option>
     <option value="None">None</option>
 	</select>
 </div>
@@ -39,7 +45,7 @@
 
     </ul>
    </div>
-	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()" style="width:250px; height:50px; font-size:large">
 		Add selected items to cart.
 	</button>
 </div>
@@ -49,6 +55,12 @@
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
 </div>
+
+<footer>
+  <p>Website designed by: Dylan, Andy, Jiakang</p>
+  <p>Website referenced from: https://github.com/carolinebarriere/carolinebarriere.github.io/tree/master/SEG3125-Module2-Grocery</p>
+
+</footer>
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>

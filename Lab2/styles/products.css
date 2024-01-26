@@ -17,11 +17,11 @@
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-    align-content: space-between
+    align-content: space-between;
 }
 
 .description {
-    font-size: large;
+    font-size: x-large;
     font-family: Arial, Helvetica, sans-serif
 }
 
