@@ -1,49 +1,4 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
-
-/* Style the navbar */
-header {
-  background-color: #ecbb7a;
-  padding: 10px 0;
-}
-
-nav ul {
-  text-align: left;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 20px;
-}
-
-/* nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-} */
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: x-large;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ffffff;
-}
-
-Create an active/current tablink class
-.tab button.active {
-  background-color: #ffffff;
-}
-
 /* Style the tab content */
 .tabcontent {
   display: none;
@@ -56,4 +11,32 @@ select {
   font-size: x-large;
   width: 200px;
   height: 40px;
+}
+
+.breadcrumb {
+  padding: 0px 16px;
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.breadcrumb li {
+  display: inline;
+  font-size: x-large;
+}
+
+.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "\27A3";
+}
+
+ul.breadcrumb li a {
+  color: #818181;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
 }

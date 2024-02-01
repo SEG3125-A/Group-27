@@ -6,6 +6,7 @@ var products = [
     {
 		name: "Neilson Milk",
 		imgSrc: 'images/milk.jpg',
+		category: ["Dairy", "Baking", "Beverages"],
 		vegetarian: true,
 		vegan: false,
 		lactoseIntolerant: false,
@@ -16,6 +17,7 @@ var products = [
     {
 		name: "Wonder White Bread",
 		imgSrc: 'images/bread.jpg',
+		category: "Grains",
 		vegetarian: true,
 		vegan: true,
 		lactoseIntolerant: true,
@@ -26,6 +28,7 @@ var products = [
     {
 		name: "Organic Eggs",
 		imgSrc: 'images/organic_eggs.jpg',
+		category: ["Dairy", "Baking"],
 		vegetarian: true,
 		vegan: false,
 		lactoseIntolerant: true,
@@ -36,6 +39,7 @@ var products = [
     {
 		name: "Earthbound Farm Organic Carrots",
 		imgSrc: 'images/organic_carrots.jpg',
+		category: ["Vegetables"],
 		vegetarian: true,
 		vegan: true,
 		lactoseIntolerant: true,
@@ -46,6 +50,7 @@ var products = [
     {
 		name: "Farmers Market Fuji Apples",
 		imgSrc: 'images/fuji_apples.jpg',
+		category: ["Fruits"],
 		vegetarian: true,
 		vegan: true,
 		lactoseIntolerant: true,
@@ -56,6 +61,7 @@ var products = [
     {
 		name: "Farm Boy Pure Ontario Honey",
 		imgSrc: 'images/honey.jpg',
+		category: ["Baking"],
 		vegetarian: true,
 		vegan: false,
 		lactoseIntolerant: true,
@@ -66,6 +72,7 @@ var products = [
     {
 		name: "Kellogg Cornflakes",
 		imgSrc: 'images/cornflakes.jpg',
+		category: ["Cereal", "Grains"],
 		vegetarian: true,
 		vegan: true,
 		lactoseIntolerant: true,
@@ -76,6 +83,7 @@ var products = [
     {
 		name: "Organic Sunflower Oil",
 		imgSrc: 'images/organic_sunflower_oil.jpg',
+		category: ["Baking", "Cooking", "Oil"],
 		vegetarian: true,
 		vegan: true,
 		lactoseIntolerant: true,
@@ -86,6 +94,7 @@ var products = [
     {
 		name: "Italpasta Fusilli",
 		imgSrc: 'images/fusilli_pasta.jpg',
+		category: ["Grains"],
 		vegetarian: true,
 		vegan: true,
 		lactoseIntolerant: true,
@@ -96,6 +105,7 @@ var products = [
     {
 		name: "Organic Chicken Thigh",
 		imgSrc: 'images/organic_chicken.jpg',
+		category: ["Meat"],
 		vegetarian: false,
 		vegan: false,
 		lactoseIntolerant: true,
@@ -106,6 +116,7 @@ var products = [
     {
 		name: "Fresh Organic Salmon",
 		imgSrc: 'images/fresh_organic_salmon.jpg',
+		category: ["Seafood"],
 		vegetarian: false,
 		vegan: false,
 		lactoseIntolerant: true,
@@ -116,6 +127,7 @@ var products = [
 	{
 		name: "Burpee Signature Broccoli",
 		imgSrc: 'images/broccoli.jpg',
+		category: ["Vegetables"],
 		vegetarian: true,
 		vegan: true,
 		lactoseIntolerant: false,
