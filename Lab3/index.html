@@ -15,9 +15,9 @@
   <!-- The sidebar -->
   <div class="sidebar">
     <p id="storename" style="color: #818181;;">Freshmart Supermarket</p>
-    <button id="client" class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-    <button id="products" class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-    <button id="cart" class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+    <button id="client" onclick="openInfo(event, 'Client')">Client</button>
+    <button id="products" onclick="openInfo(event, 'Products')">Products</button>
+    <button id="cart" onclick="openInfo(event, 'Cart')">Cart</button>
   </div>
 
   <div id="contents">
@@ -39,11 +39,24 @@
         <option value="Lactose Intolerant">Lactose Intolerant</option>
         <option value="Gluten Intolerant">Gluten Intolerant</option>
         <option value="Organic">Organic</option>
+        <option value="Vegetables">Vegetables</option>
+        <option value="Meat">Meat</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Cereal">Cereal</option>
+        <option value="Fruits">Fruits</option>
+        <option value="Baking">Baking</option>
         <option value="None">None</option>
       </select>
+      <br>
+      <br>
 
-      <br>
-      <br>
+    </div>
+
+    <div id="Products" class="tabcontent">
+      <h3>Your targeted products</h3>
+      <p>We preselected products based on your preference.</p>
+      <p>You can also select the a Category to help you find your items quickly</p>
+      Choose items to buy:
 
       <div id="filterSelect">
         <input class="filterSelect" type="checkbox" name="Vegetables">
@@ -59,13 +72,7 @@
         <input class="filterSelect" type="checkbox" name="Baking">
         <label for="Baking">Baking</label>
       </div>
-    </div>
-
-    <div id="Products" class="tabcontent">
-      <h3>Your targeted products</h3>
-      <p>We preselected products based on your preference.</p>
-      <p>You can also select the a Category to help you find your items quickly</p>
-      Choose items to buy:
+      
       <div id="displayProduct">
         <ul id="product-list">
 

@@ -160,6 +160,24 @@ function restrictListProducts(prods, restriction) {
 		else if ((restriction == "Organic") && (prods[i].organic == true)){
 			products_info.push(prods[i]);
 		}
+		else if ((restriction == "Meat") && (prods[i].category.includes("Meat"))){
+			products_info.push(prods[i]);
+		}
+		else if ((restriction == "Vegetables") && (prods[i].category.includes("Vegetables"))){
+			products_info.push(prods[i]);
+		}
+		else if ((restriction == "Dairy") && (prods[i].category.includes("Dairy"))){
+			products_info.push(prods[i]);
+		}
+		else if ((restriction == "Cereal") && (prods[i].category.includes("Cereal"))){
+			products_info.push(prods[i]);
+		}
+		else if ((restriction == "Fruits") && (prods[i].category.includes("Fruits"))){
+			products_info.push(prods[i]);
+		}
+		else if ((restriction == "Baking") && (prods[i].category.includes("Baking"))){
+			products_info.push(prods[i]);
+		}
 		else if (restriction == "None"){
 			products_info.push(prods[i]);
 		}

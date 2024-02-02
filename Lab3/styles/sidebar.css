@@ -25,7 +25,7 @@
 }
 
 /* Style links on mouse-over */
-.tablinks:hover {
+.sidebar button:hover {
     color: #f1f1f1;
     background-color: #3e8e41;
 }
