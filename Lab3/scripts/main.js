@@ -128,3 +128,45 @@ function selectedItems(){
 	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts).toFixed(2)));
 		
 }
+
+function openInfo(evt, tabName) {
+    var tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+    // Highlight the breadcrumb based on the current tab
+    updateBreadcrumb(tabName);
+}
+
+function updateBreadcrumb(activeTabName) {
+    var breadcrumbs = document.querySelectorAll('.breadcrumb a');
+    var breadcrumbMap = {
+        "Client": 1,
+        "Products": 2,
+        "Cart": 3
+    };
+    var activeIndex = breadcrumbMap[activeTabName];
+
+    breadcrumbs.forEach(function(breadcrumb, index) {
+        if (index < activeIndex) {
+            breadcrumb.style.color = '#01447e'; // Active color
+            breadcrumb.style.fontWeight = 'bold';
+        } else if (index === activeIndex) {
+            breadcrumb.style.color = '#FFA500'; // Highlight current tab
+            breadcrumb.style.fontWeight = 'bold';
+        } else {
+            breadcrumb.style.color = '#818181'; // Inactive color
+            breadcrumb.style.fontWeight = 'normal';
+        }
+    });
+}
