@@ -20,6 +20,9 @@ function openInfo(evt, tabName) {
 	document.getElementById(tabName).style.display = "block";
 	evt.currentTarget.className += " active";
 
+    // Highlight the breadcrumb based on the current tab
+    updateBreadcrumb(tabName);
+
 }
 
 
@@ -127,25 +130,6 @@ function selectedItems(){
 	c.appendChild(para);
 	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts).toFixed(2)));
 		
-}
-
-function openInfo(evt, tabName) {
-    var tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (let i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    tablinks = document.getElementsByClassName("tablinks");
-    for (let i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-
-    // Highlight the breadcrumb based on the current tab
-    updateBreadcrumb(tabName);
 }
 
 function updateBreadcrumb(activeTabName) {
