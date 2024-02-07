@@ -17,45 +17,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-body" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                Snipper
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Photos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                        Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Hair Cut</a></li>
-                            <li><a class="dropdown-item" href="#">Perm</a></li>
-                            <li><a class="dropdown-item" href="#">Reborn</a></li>
-                            <li><a class="dropdown-item" href="#">Coloring</a></li>
-                            <li><a class="dropdown-item" href="#">Treatment</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Snipper</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#section2">Services<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Our Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section4">Photos</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section5">Contact Us</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
 
     <!-- Section 1 - White Background -->
-    <div class="container-fluid section-1 full-height d-flex align-items-center justify-content-center">
+    <div id="section1" class="container-fluid full-height d-flex align-items-center justify-content-center">
 
         <div>
         <h1>This is Section 1</h1>
@@ -64,7 +50,7 @@
     </div>
   
     <!-- Section 2 - Black Background -->
-    <div class="container-fluid section-2 full-height d-flex align-items-center justify-content-center">
+    <div id="section2" class="container-fluid full-height d-flex align-items-center justify-content-center">
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 18rem;">
@@ -108,17 +94,50 @@
             </div>
         </div>
     </div>
+
+    <div id="section3" class="container-fluid full-height d-flex align-items-center justify-content-center">
+
+        <div>
+            <h1>Our Team Section</h1>
+            <p>Background: Black</p>
+        </div>
+    </div>
+
+    <div id="section4" class="container-fluid full-height d-flex align-items-center justify-content-center">
+
+        <div>
+            <h1>Photos Section</h1>
+            <p>Background: White</p>
+        </div>
+    </div>
   
     <!-- Section 3 - White Background -->
-    <div class="container-fluid section-3 full-height d-flex align-items-center justify-content-center">
-        <div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div id="section5" class="container-fluid full-height d-flex align-items-center justify-content-center">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <!-- Black square container -->
+                <div class="black-square">
+                    <div class="row">
+                        <p>This is Row 1</p>
+                    </div>
+                    <div class="row">
+                        <p>This is Row 2</p>
+                    </div>
+                    <div class="row">
+                        <form>
+                            <!-- Form inputs -->
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

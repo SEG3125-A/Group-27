@@ -1,23 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Custom styles for full height */
 .full-height {
-    height: 100vh; /* 100% of the viewport height */
+    min-height: 100vh; /* 100% of the viewport height */
     background-size: cover;
     background-position: center;
 }
 
-.section-1 {
+#section1 {
     background-image: url("images/women.jpg");
     color: white; /* Ensuring text is visible on light backgrounds */
 }
 
-.section-2 {
+#section2 {
     display: flex;
     justify-content: center;
     background-image: url("images/blackBackground.jpg");
     color: white; /* Ensuring text is visible on dark backgrounds */
 }
 
-.section-3 {
+#section3 {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black; /* Ensuring text is visible on dark backgrounds */
+}
+
+#section4 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white; /* Ensuring text is visible on dark backgrounds */
+}
+
+#section5 {
     background-image: url("images/scissors.jpg");
     color: white; /* Ensuring text is visible on light backgrounds */
 }
@@ -37,9 +55,10 @@
     font-size: 30px;
 }
 
-#navbarNavDropdown {
+.col {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
 }
  
 .navbar-brand img {
@@ -70,4 +89,18 @@ nav {
     object-fit: cover;
     width: 100%;
     height: 350px;
+}
+
+.black-square {
+    background-color: black;
+    min-width: 700px; /* Adjust based on your preference */
+    min-height: 700px; /* Making the div square */
+    /* padding: 20px; Padding inside the square */
+    color: white; /* Ensures text and inputs labels are visible */
+}
+  /* Optional: Styles for the form inputs to make them stand out */
+.black-square input, .black-square textarea, .black-square select {
+    background-color: #333;
+    border: 1px solid #666;
+    color: white;
 }
