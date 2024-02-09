@@ -16,39 +16,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">SNIPPER</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#section2">Services<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section3">Our Team</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#section4">Photos</a>
-              </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#section5">Bookings</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
     <!-- Section 1 - White Background -->
     <div id="section1" class="container-fluid full-height d-flex align-items-center justify-content-center">
         <section class="text-center">
             <div class="container">
             <h1 class="'display-4">SNIPPER: Top Rated Hair Salon for All Your Hair Treatments</h1>
             <br>
-            <p class="lead">Geared with the latest technologies and years of experience, 
-                SNIPPER offers you numerous hair treatments and styles including the revolutionary hair trends 
-                    found in the beauty industry today. Our undeniably skillful stylists at SNIPPER are 
-                    excellent in giving you a complete hair transformation by adding colors or giving your hair a dreamy perm.</p>
+            <p id="welcomeMessage" class="lead"></p>
             <br>
             <br>
             <br>
@@ -62,52 +36,60 @@
               </blockquote>
         </div>
         </section>
-
-        <div>
-        
-        </div>
+        <script>
+    const message = "Geared with the latest technologies and years of experience, SNIPPER offers you numerous hair treatments and styles including the revolutionary hair trends found in the beauty industry today. Our undeniably skillful stylists at SNIPPER are excellent in giving you a complete hair transformation by adding colors or giving your hair a dreamy perm.";
+    let i = 0;
+    function typeWriter() {
+        if (i < message.length) {
+            document.getElementById("welcomeMessage").innerHTML += message.charAt(i);
+            i++;
+            setTimeout(typeWriter, 50); // Adjust typing speed
+        }
+    }
+    typeWriter();
+</script>
     </div>
-  
     <!-- Section 2 - Black Background -->
-    <div id ='section2' class="container-fluid full-height d-flex align-items-center justify-content-center">
+    <div id ='section2' class="container-fluid full-height d-flex flex-column align-items-center justify-content-center">
+        <h1 style="padding-bottom: 30px;">Services</h1>
         <div class="row">
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="images/haircut.jpg" class="card-img-top fit-image" alt="...">
-                    <div class="card-body">
+                    <div class="card-body" style="height: 15rem;">
                       <h5 class="card-title">Hair Cut</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p>A Skilled process of shaping or styling hair to achieve a desired look, enhancing appearance and expressing individuality.</p>
+                      <a href="#section5" class="btn btn-primary bookButton">Book Appointment</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="images/hairperm.jpg" class="card-img-top fit-image" alt="...">
-                    <div class="card-body">
+                    <div class="card-body" style="height: 15rem;">
                       <h5 class="card-title">Perm</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p>A chemical treatment that adds curls or waves to your hair, creating a long-lasting style.</p>
+                      <a href="#section5" class="btn btn-primary bookButton">Book Appointment</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="images/hairreborn.jpg" class="card-img-top fit-image" alt="...">
-                    <div class="card-body">
+                    <div class="card-body" style="height: 15rem;">
                       <h5 class="card-title">Reborn</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p>A revitalizing treatment for your hair, restoring its health and vitality through deep conditioning and specialized techniques.</p>
+                      <a href="#section5" class="btn btn-primary bookButton">Book Appointment</a>
                     </div>
                   </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="images/haircoloring.jpg" class="card-img-top fit-image" alt="...">
-                    <div class="card-body">
+                    <div class="card-body" style="height: 15rem;">
                       <h5 class="card-title">Coloring</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p>Changing or enhancing the color of your hair using dye or tint, providing a fresh look and style.</p>
+                      <a href="#section5" class="btn btn-primary bookButton">Book Appointment</a>
                     </div>
                   </div>
             </div>
@@ -115,82 +97,80 @@
     </div>
 
     <!-- Section 3 - White Background -->
-    <div id="section3" class="container-fluid full-height d-flex align-items-center justify-content-center">
-        <!-- <div class="row">
-            <div class="col-12 text-center"> 
-                <h1>Introducing our trusted Hair Stylist</h1>
-            </div>
-        </div> -->
+    <div id="section3" class="container-fluid full-height d-flex flex-column align-items-center justify-content-center">
+        <h1 style="color: white;">Introducing our trusted Hair Stylist</h1>
+        <br>
+        <br>
         <div class="row">
             <div class="col">
                 <div class="white-card" style="width: 18rem;">
                     <img src="images/Alex.jpg" class="card-img-top fit-image" alt="...">
-                    <div class="white-card-body">
+                    <div class="dark-card-body">
                         <br>
-                      <h5 class="black-card-title">Alex</h5>
-                      <h6 class="black-card-title">Master Stylist</h6>
-                      <p class="black-card-text">Accomplished exceptional mastery in hairdressing techniques with over 10 years of experience</p>
+                      <h5 class="card-title white-text">Alex</h5>
+                      <h6 class="card-title white-text">Master Stylist</h6>
+                      <p class="card-text white-text">Accomplished exceptional mastery in hairdressing techniques with over 10 years of experience</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="white-card" style="width: 18rem;">
                     <img src="images/James.jpg" class="card-img-top fit-image" alt="...">
-                    <div class="white-card-body">
+                    <div class="dark-card-body">
                         <br>
-                      <h5 class="black-card-title">James</h5>
-                      <h6 class="black-card-title">Senior Stylist</h6>
-                      <p class="black-card-text">Equipped with extensive experience and expertise in hair styling after 7 years of experience in this industry</p>
+                      <h5 class="card-title white-text">James</h5>
+                      <h6 class="card-title white-text">Senior Stylist</h6>
+                      <p class="card-title white-text">Equipped with extensive experience and expertise in hair styling after 7 years of experience in this industry</p>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="white-card" style="width: 18rem;">
                     <img src="images/Courtney.jpg" class="card-img-top fit-image" alt="...">
-                    <div class="white-card-body">
+                    <div class="dark-card-body">
                         <br>
-                      <h5 class="black-card-title">Courtney</h5>
-                      <h6 class="black-card-title">Advance Stylist</h6>
-                      <p class="black-card-text">Underwent advanced training and specializes in innovative hair styling techniques</p>
+                      <h5 class="card-title white-text">Courtney</h5>
+                      <h6 class="card-title white-text">Advance Stylist</h6>
+                      <p class="card-text white-text">Underwent advanced training and specializes in innovative hair styling techniques</p>
                     </div>
                   </div>
             </div>
             <div class="col">
                 <div class="white-card" style="width: 18rem;">
                     <img src="images/Melissa.jpg" class="card-img-top fit-image" alt="...">
-                    <div class="white-card-body">
+                    <div class="dark-card-body">
                         <br>
-                      <h5 class="black-card-title">Melissa</h5>
-                      <h6 class="black-card-title">Studio Stylist</h6>
-                      <p class="black-card-text">Talented stylist who works in a studio setting, offering personalized hair styling services</p>
+                      <h5 class="card-title white-text">Melissa</h5>
+                      <h6 class="card-title white-text">Studio Stylist</h6>
+                      <p class="card-text white-text">Talented stylist who works in a studio setting, offering personalized hair styling services</p>
                     </div>
                   </div>
             </div>
         </div>
     </div>
 
-    <div id="section4" class="container-fluid full-height d-flex align-items-center justify-content-center">
-
+    <div id="section4" class="container-fluid full-height d-flex flex-column align-items-center justify-content-center">
+        <h1 style="margin: 30px 1px 1px 1px;">Photos</h1>
         <div>
             <div class="testimonial-section">
                 <div class="testimonial">
                     <div class="rating">★★★★★</div>
-                    <p>Testimonial content 1</p>
-                    <img src="images/hairblond.jpg" class="card-img-top fit-image" alt="...">
+                    <p>Recently got a short haircut at Snipper and couldn't be happier! Alex the Master Stylist nailed the look I was going for, and the attention to detail was impressive. The cut is sharp, clean, and perfectly suits my face shape. Plus, it's easy to maintain, which is a huge plus for my busy lifestyle. Highly recommend Snipper for any guy looking for a top-notch short haircut!</p>
+                    <img src="images/menHair.jpg" class="card-img-top fit-image" alt="...">
                 </div>
                 <div class="testimonial">
                     <div class="rating">★★★★☆</div>
-                    <p>Testimonial content 2</p>
+                    <p>I recently visited Snipper for a hair coloring session, and I'm quite pleased with the results! Melissa listened attentively to my preferences and offered valuable suggestions. The final outcome was vibrant and precisely matched what I had envisioned. The salon's ambiance was relaxing, and the staff was friendly and professional. The only reason I'm not giving it a full 5 stars is that the process took a bit longer than expected. Nonetheless, I'm happy with my experience and would definitely return for future coloring services!</p>
                     <img src="images/haircolourful.jpg" class="card-img-top fit-image" alt="...">
                 </div>
                 <div class="testimonial">
                     <div class="rating">★★★★★</div>
-                    <p>Testimonial content 3</p>
+                    <p>I recently had a perm done at Snipper, and I can confidently say it was a fantastic experience from start to finish! James was incredibly skilled and understood exactly what I wanted. The perm turned out even better than I had hoped for, with gorgeous curls that perfectly complement my style. The staff was friendly and attentive throughout the process. I'm giving it a solid 5 stars because not only did I leave with fabulous curls, but the entire experience exceeded my expectations. If you're considering a perm, look no further than Snipper!</p>
                     <img src="images/hairgrey.jpg" class="card-img-top fit-image" alt="...">
                 </div>
                 <div class="testimonial">
                     <div class="rating">★★★★★</div>
-                    <p>Testimonial content 4</p>
+                    <p>Wow! I had such a fantastic experience at Snipper with their hair perm service. The stylist was incredibly knowledgeable and took the time to discuss the best options for my hair type. The results were absolutely stunning, natural-looking curls that added volume and texture to my hair. I'm beyond pleased with my perm and would highly recommend Snipper to anyone looking to switch up their hairstyle!</p>
                     <img src="images/hairorange.jpg" class="card-img-top fit-image" alt="...">
                 </div>
             </div>
@@ -227,16 +207,6 @@
                                 <option>Reborn</option>
                                 <option>Coloring</option>
                                 <option>Treatment</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="hairstylists" class="form-label">Your Preferred Hairstylists:</label>
-                            <select id="hairstylists" class="form-control">
-                                <option>Any</option>
-                                <option>Alex</option>
-                                <option>James</option>
-                                <option>Courtney</option>
-                                <option>Melissa</option>
                             </select>
                         </div>
                         <div class="mb-3">
@@ -281,4 +251,6 @@ https://unsplash.com/photos/woman-wearing-white-towel-y2T5hT7pWx4
 https://stock.adobe.com/images/vertical-portrait-of-a-beautiful-happy-female-professional-hairstylist-holding-curling-iron-posing-proudly-at-her-hair-salon-profession-occupation-career-fashion-industry-concept/251075076
 https://www.istockphoto.com/photos/hairdresser-portrait
 https://www.istockphoto.com/photos/male-hair-stylist-portrait
+https://unsplash.com/photos/white-and-black-wallpaper-usmhPmT5sj0
+https://unsplash.com/photos/black-and-white-brick-wall-9a58YsGiTPk
 -->
