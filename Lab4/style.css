@@ -125,3 +125,35 @@ form {
     flex-direction: column;
     align-items: center;
 }
+
+.testimonial-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  
+  .testimonial {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px; /* Adjust based on your preference */
+    width: 40%; /* Adjust based on your preference */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Adjust the position of every 2nd testimonial */
+  .testimonial:nth-child(odd) {
+    transform: translateY(20px); /* Pushes odd testimonials down */
+  }
+  
+  .testimonial:nth-child(even) {
+    transform: translateY(20px); /* Pulls even testimonials up */
+  }
+  
+  
+  .rating {
+    color: orange;
+    text-align: center;
+    padding-bottom: 5px;
+}
