@@ -87,11 +87,23 @@ nav {
     color: white;
 }
 
+.black-card-text, .black-card-title{
+    color: #333;
+}
+
 .card-body {
     background-color: rgb(17, 17, 17);
 }
 
 .card {
+    border-color: black
+}
+
+.white-card-body {
+    background-color: rgb(255, 255, 255);
+}
+
+.white-card {
     border-color: black
 }
 
