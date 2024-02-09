@@ -157,3 +157,18 @@ form {
     text-align: center;
     padding-bottom: 5px;
 }
+.navbar-nav .nav-link {
+    font-size: larger; /* Adjusts font size to be smaller */
+}
+
+
+.btn-secondary {
+    background-color: #867b8398; /* A shade of brown */
+    color: white; /* White text color */
+}
+
+
+.blockquote-footer {
+    color: #ffffff; /* Sets the font color to white */
+    font-weight: lighter; /* Makes the font lighter */
+}
