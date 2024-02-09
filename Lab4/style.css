@@ -14,6 +14,16 @@ html {
     color: white; /* Ensuring text is visible on light backgrounds */
 }
 
+#welcomeMessage {
+    font-size: 40px;
+    font-weight: 600;
+    color: #f6efef;
+    white-space: pre-wrap;
+    margin-top: 20vh;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 #section2 {
     display: flex;
     justify-content: center;
@@ -92,10 +102,15 @@ nav {
 }
 
 .black-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px 20px;
+    /* align-items: flex-start; */
     background-color: black;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); */
     min-width: 700px; /* Adjust based on your preference */
-    min-height: 700px; /* Making the div square */
-    /* padding: 20px; Padding inside the square */
+    min-height: 400px; /* Making the div square */
     color: white; /* Ensures text and inputs labels are visible */
 }
   /* Optional: Styles for the form inputs to make them stand out */
@@ -103,4 +118,10 @@ nav {
     background-color: #333;
     border: 1px solid #666;
     color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
