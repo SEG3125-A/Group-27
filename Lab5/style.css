@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom styles for full height */
+.full-height {
+    min-height: 100vh; /* 100% of the viewport height */
+    background-size: cover;
+    background-position: center;
+}
+
+#section1 {
+    background-image: url("images/women.jpg");
+    color: white; /* Ensuring text is visible on light backgrounds */
+}
+
+#welcomeMessage {
+    font-size: 30px;
+    font-weight: 600;
+    color: #f6efef;
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/blackBackground.jpg");
+    color: white; /* Ensuring text is visible on dark backgrounds */
+}
+
+#section3 {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/wall.jpg");
+    color: black; /* Ensuring text is visible on dark backgrounds */
+}
+
+#section4 {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/blacktexture.jpg");
+    color: white; /* Ensuring text is visible on dark backgrounds */
+}
+
+#section5 {
+    background-image: url("images/scissors.jpg");
+    color: white; /* Ensuring text is visible on light backgrounds */
+}
+
+.nav-link {
+    color: white;
+    font-size: 30px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.navbar-brand img {
+    max-height: 150px;
+    width: auto;
+    object-fit: contain;
+}
+
+nav {
+    height: 100px;
+    width: auto;
+    background-color: white;
+}
+
+.card-text, .card-title{
+    color: white;
+}
+
+.black-card-text, .black-card-title{
+    color: #333;
+}
+
+.card-body {
+    background-color: rgb(17, 17, 17);
+}
+
+.card {
+    border-color: black
+}
+
+.white-card-body {
+    background-color: rgb(255, 255, 255);
+}
+
+.white-card {
+    border-color: black
+}
+
+.fit-image {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
+.black-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px 20px;
+    /* align-items: flex-start; */
+    background-color: black;
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); */
+    min-width: 700px; /* Adjust based on your preference */
+    min-height: 400px; /* Making the div square */
+    color: white; /* Ensures text and inputs labels are visible */
+}
+  /* Optional: Styles for the form inputs to make them stand out */
+.black-square input, .black-square textarea, .black-square select {
+    background-color: #333;
+    border: 1px solid #666;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+  }
+  
+  .testimonial {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px; /* Adjust based on your preference */
+    width: 40%; /* Adjust based on your preference */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Adjust the position of every 2nd testimonial */
+  .testimonial:nth-child(odd) {
+    transform: translateY(20px); /* Pushes odd testimonials down */
+  }
+  
+  .testimonial:nth-child(even) {
+    transform: translateY(20px); /* Pulls even testimonials up */
+  }
+  
+  
+  .rating {
+    color: orange;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.navbar-nav .nav-link {
+    font-size: larger; /* Adjusts font size to be smaller */
+}
+
+
+.btn-secondary {
+    background-color: #867b8398; /* A shade of brown */
+    color: white; /* White text color */
+}
+
+
+.blockquote-footer {
+    color: #ffffff; /* Sets the font color to white */
+    font-weight: lighter; /* Makes the font lighter */
+}
