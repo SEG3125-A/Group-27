@@ -22,3 +22,15 @@ const endTime = new Date();
 endTime.setHours(18, 0, 0);
 
 populateTimeSlots(startTime, endTime, 15);
+
+// Additional code for lab5:
+function handleBookingSubmit() {
+    // can add form validation and processing here
+    // 
+    //
+    // placeholder for additional code if need validation..
+    //
+    //
+    // just showing the credit card modal below
+    $('#section6').modal('show');
+}

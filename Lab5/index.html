@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Getting jQuery from google-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <!-- jQuery library -->
@@ -14,7 +16,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -252,7 +254,7 @@
 
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary" onclick="handleBookingSubmit()">Submit</button>
                     </form>
                     <div class="mb-3">
                         <h4>Where to find us</h4>
@@ -266,6 +268,39 @@
             </div>
         </div>
     </div>
+
+    <!-- Additional section for lab5: Credit Card Details Modal -->
+    <div id= "section6" class="modal fade" tabindex="-1" aria-labelledby="creditCardModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="creditCardModalLabel">Credit Card Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Credit Card Form -->
+                    <form id="creditCardForm">
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardExpiry" class="form-label">Expiry Date</label>
+                            <input type="text" class="form-control" id="cardExpiry">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardCVC" class="form-label">CVC</label>
+                            <input type="text" class="form-control" id="cardCVC">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="main.js"></script>
 </body>
@@ -285,4 +320,7 @@ https://stock.adobe.com/images/vertical-portrait-of-a-beautiful-happy-female-pro
 https://www.istockphoto.com/photos/hairdresser-portrait
 https://www.istockphoto.com/photos/male-hair-stylist-portrait
 https://unsplash.com/photos/white-and-black-wallpaper-usmhPmT5sj0
+
+Lab 5 Other references:
+W3Schools: https://www.w3schools.com/jquery/jquery_get_started.asp
 -->
