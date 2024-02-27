@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <title>Lab 1 Questionnaire</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="front fullscreen bg-dark text-white d-flex flex-column align-items-center justify-content-center">
+        <h1>Questionnaire</h1>
+        <h3>by Group 27</h3>       
+        <p style="font-size: xx-large;">Scroll down to continue</p>
+      </div>
+    </div>
+  
+    <div class = "website fullscreen bg-dark text-white d-flex flex-column align-items-center justify-content-center">
+      <p id="description" style="text-align: center;">We're currently concentrating on this particular website. The user interface (UI) of the site is quite poor, characterized by 
+        a cluttered and challenging layout when viewing posted listings. The lack of uniformity in design makes it appear disorganized, 
+        with varying font sizes and colors that can be bothersome to users.
+      </p>
+      <h3><a href="https://www.arngren.net/"><b>https://www.arngren.net/</b></a></h3>
+      <img id="websiteimg" src="Arngren Main Page.png" alt="Arngren Main Page" class="center">         
+    </div>
+
+    <div class = "qna  fullscreen bg-dark text-white d-flex flex-column align-items-center justify-content-center">
+      <h1>Questions</h1>
+      <div id="question1" class="flex-item">
+        <h3>Q1: What do you think of the User Interface of Arngren? (in 5 words)</h3>
+          <h4>Answer: <br>
+              <textarea rows="5" cols="75"></textarea></h4>
+      </div>
+      <div id="question2" class="flex-item">
+        <h3>Q2: Please evaluate the website's user interface on a scale of 1 to 5 points.</h3>
+          <h4>Answer:<br>
+            <input type="radio" name="Number" value=" 1">1<br>
+            <input type="radio" name="Number" value=" 2">2<br>
+            <input type="radio" name="Number" value=" 3">3<br>
+            <input type="radio" name="Number" value=" 4">4<br>
+            <input type="radio" name="Number" value=" 5">5<br></h4>
+      </div>
+      <div id="question3" class="flex-item">
+        <h3>Q3: How many different colours do you see on this User Interface</h3>
+          <h4>Answer:<br>
+        <select id="favorite">
+          <option value="1" selected="selected">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="3">4</option>
+          <option value="3">5</option>
+          <option value="3">6</option>
+          <option value="3">7</option>
+          <option value="3">8</option>
+        </select></h4>
+      </div>
+      <div id="question4" class="flex-item">
+        <h3>Q4: Please check all the issues you have encountered with the website's user interface:</h3>
+        <h4>Answer:<br>
+          <input type="checkbox" name="Color">Confusing Navigation<br>
+          <input type="checkbox" name="Color">Cluttered Layout<br>
+          <input type="checkbox" name="Color">Unappealing Design<br>
+          <input type="checkbox" name="Color">Poor Responsiveness<br>
+          <input type="checkbox" name="Color">Inefficient search functionality<br>
+          <input type="checkbox" name="Color">Difficulty accessing information<br>
+          <input type="checkbox" name="Color">Other (please specify):<br>
+          <textarea rows="5" cols="75"></textarea></h4>
+        </h4>
+      </div>
+      <div id="question5" class="flex-item">
+        <h3>Q5: Any comments?</h3>
+          <h4>Answer: <br>
+            <textarea rows="5" cols="75"></textarea></h4>
+      </div>
+      <div id="submit">
+        <button id="submitButton" type="button" class="block">
+          SUBMIT
+        </button>
+      </div>
+      <p id="signature">Site created by Group 27</p>	
+    </div>      
+</body>
+</html>

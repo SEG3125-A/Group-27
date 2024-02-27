@@ -1,0 +1,35 @@
+.fullscreen {
+    width: 100vw; /* 100% of the viewport width */
+    min-height: 100vh; /* 100% of the viewport height */
+    /* Additional styles to ensure there are no margins */
+    margin: 0;
+    /* To handle scrolling inside the div if your content overflows */
+    overflow: auto;
+}
+
+.front {
+    gap: 50px;
+}
+
+#websiteimg {
+    width: 60vw;
+    height: auto;
+}
+
+#description {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    margin: 75px 75px 75px 75px;
+}
+
+.qna {
+    gap: 40px;
+    padding-top: 100px;
+}
+
+
+.flex-item {
+    width: 75vw;
+    height: auto;
+}
