@@ -23,13 +23,10 @@
     margin: 75px 75px 75px 75px;
 }
 
-.qna {
-    gap: 40px;
+.container {
     padding-top: 100px;
 }
 
-
-.flex-item {
-    width: 75vw;
-    height: auto;
+.form-check-label {
+    font-size: x-large;
 }
