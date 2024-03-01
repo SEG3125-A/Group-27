@@ -30,3 +30,14 @@
 .form-check-label {
     font-size: x-large;
 }
+
+.list-group-container {
+    border: 2px solid #3f3f3f;
+    max-height: 200px; /* Adjust based on your needs */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.questions {
+    font-size: x-large;
+}
