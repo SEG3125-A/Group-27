@@ -9,7 +9,7 @@ function init() {
     console.log(`server started`)
   })
 
-  require("./routes")(app)
+  require("./surveyController")(app)
 }
 
 init()

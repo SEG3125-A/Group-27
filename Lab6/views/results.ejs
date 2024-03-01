@@ -13,94 +13,89 @@
 <body class="bg-dark text-white">
     <h1 class="text-center"><b>Survery Results</b></h1>
     <div class="container text-center">
-        <div class="question1 mb-5">
+        <div class="questions mb-5">
             <h2>Description of UI in 5 Words</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Item 1</li>
-                <li class="list-group-item">Item 2</li>
-                <li class="list-group-item">Item 3</li>
-                <!-- Add more items as needed -->
+            <ul class="list-group list-group-container">
+              <% for (var i=0; i < data[2].length; i++) { %>
+                <li><%= data[2][i] %></li>
+              <% } %>
             </ul>
         </div>
-        <div class="question2 mb-5">
+        <div class="questions mb-5">
             <h2>Ratings</h2>
+            <h2><%= data[0] %>/5</h2>
         </div>
-        <div class="question3 mb-5">
-            <h2>Number of Colours</h2> <!--PIE CHART-->
+        <div class="questions mb-5">
+            <h2>Average Number of Colours Seen by Users</h2>
+            <h2><%= data[1] %></h2>
         </div>
-        <div class="question4 mb-5">
-            <div class="container text-center">
+        <div class="questions mb-5">
+            <div class="text-center">
                 <h2>Issues</h2>
                 <div class="row">
-                  <div class="col">
-                    Confusing Navigation
-                  </div>
-                  <div class="col">
-                    Count
-                  </div>
+                    <div class="col">Confusing Navigation</div>
+                      <% if ('Confusing Navigation' in data[4]) { %>
+                        <div class="col"><%= data[4]['Confusing Navigation'] %></div>
+                      <% } else { %> 
+                        <div class="col"><%= 0 %></div>
+                      <% } %>
                 </div>
                 <div class="row">
-                  <div class="col">
-                    Cluttered Layout
-                  </div>
-                  <div class="col">
-                    count
-                  </div>
+                    <div class="col">Cluttered Layout</div>
+                    <% if ('Cluttered Layout' in data[4]) { %>
+                      <div class="col"><%= data[4]['Cluttered Layout'] %></div>
+                    <% } else { %> 
+                      <div class="col"><%= 0 %></div>
+                    <% } %>
                 </div>
                 <div class="row">
-                    <div class="col">
-                      Unappealing Design
-                    </div>
-                    <div class="col">
-                      count
-                    </div>
+                    <div class="col">Unappealing Design</div>
+                    <% if ('Unappealing Design' in data[4]) { %>
+                      <div class="col"><%= data[4]['Unappealing Design'] %></div>
+                    <% } else { %> 
+                      <div class="col"><%= 0 %></div>
+                    <% } %>
                 </div>
                 <div class="row">
-                    <div class="col">
-                      Poor Responsiveness
-                    </div>
-                    <div class="col">
-                      count
-                    </div>
+                    <div class="col">Poor Responsiveness</div>
+                    <% if ('Poor Responsiveness' in data[4]) { %>
+                      <div class="col"><%= data[4]['Poor Responsiveness'] %></div>
+                    <% } else { %> 
+                      <div class="col"><%= 0 %></div>
+                    <% } %>
                 </div>
                 <div class="row">
-                    <div class="col">
-                      Inefficiency Seach Functionalities
-                    </div>
-                    <div class="col">
-                      count
-                    </div>
+                    <div class="col">Inefficiency Seach Functionalities</div>
+                    <% if ('Inefficiency Seach Functionalities' in data[4]) { %>
+                      <div class="col"><%= data[4]['Inefficiency Seach Functionalities'] %></div>
+                    <% } else { %> 
+                      <div class="col"><%= 0 %></div>
+                    <% } %>
                 </div>
                 <div class="row">
-                    <div class="col">
-                      Difficulty Accessing Information
-                    </div>
-                    <div class="col">
-                      count
-                    </div>
+                    <div class="col">Difficulty Accessing Information</div>
+                    <% if ('Difficulty Accessing Information' in data[4]) { %>
+                      <div class="col"><%= data[4]['Difficulty Accessing Information'] %></div>
+                    <% } else { %> 
+                      <div class="col"><%= 0 %></div>
+                    <% } %>
                 </div>
                 <div class="row">
-                    <div class="col">
-                      Others:
-                    </div>
-                    <div class="col">
-                        <ul class="list-group">
-                            <li class="list-group-item">Item 1</li>
-                            <li class="list-group-item">Item 2</li>
-                            <li class="list-group-item">Item 3</li>
-                            <!-- Add more items as needed -->
-                        </ul>
-                    </div>
+                    <div class="col">Others</div>
+                    <% if ('Others' in data[4]) { %>
+                      <div class="col"><%= data[4]['Others'] %></div>
+                    <% } else { %> 
+                      <div class="col"><%= 0 %></div>
+                    <% } %>
                 </div>
             </div>
         </div>
-        <div class="question5 mb-5">
+        <div class="questions mb-5">
             <h2>Improvements</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Item 1</li>
-                <li class="list-group-item">Item 2</li>
-                <li class="list-group-item">Item 3</li>
-                <!-- Add more items as needed -->
+            <ul class="list-group list-group-container">
+              <% for (var i=0; i < data[3].length; i++) { %>
+                <li><%= data[2][i] %></li>
+              <% } %>
             </ul> 
         </div>
     </div> 

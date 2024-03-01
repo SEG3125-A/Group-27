@@ -1,0 +1,109 @@
+{
+    "answers": [
+        {
+            "description": "I think is very messy",
+            "ratings": "2",
+            "numOfColors": "5",
+            "issues": [
+                "Cluttered Layout",
+                "Unappealing Design",
+                "Inefficency Search Functionality",
+                "Difficulty Accessing Information"
+            ],
+            "improvements": "There should be a consistent layout"
+        },
+        {
+            "description": "There is too many words",
+            "ratings": "3",
+            "numOfColors": "6",
+            "issues": [
+                "Cluttered Layout",
+                "Unappealing Design",
+                "Difficulty Accessing Information"
+            ],
+            "improvements": "There should be lesser words"
+        },
+        {
+            "description": "Navigation is confusing",
+            "ratings": "3",
+            "numOfColors": "3",
+            "issues": "Confusing Navigation",
+            "improvements": "Navigation should be more visible "
+        },
+        {
+            "description": "There are too many colors",
+            "ratings": "2",
+            "numOfColors": "7",
+            "issues": [
+                "Cluttered Layout",
+                "Unappealing Design",
+                "Difficulty Accessing Information"
+            ],
+            "improvements": "Don't use so many colors"
+        },
+        {
+            "description": "The photos are everywhere",
+            "ratings": "1",
+            "numOfColors": "4",
+            "issues": [
+                "Cluttered Layout",
+                "Inefficency Search Functionality",
+                "Difficulty Accessing Information"
+            ],
+            "improvements": "Layout the images properly"
+        },
+        {
+            "description": "search bar is difficult to find",
+            "ratings": "3",
+            "numOfColors": "4",
+            "issues": [
+                "Confusing Navigation",
+                "Cluttered Layout",
+                "Unappealing Design"
+            ],
+            "improvements": "Make the search bar more visible"
+        },
+        {
+            "description": "the fonts size and color is inconsistent",
+            "ratings": "1",
+            "numOfColors": "5",
+            "issues": [
+                "Unappealing Design",
+                "Difficulty Accessing Information"
+            ],
+            "improvements": "make them more consistent"
+        },
+        {
+            "description": "language is not consistent",
+            "ratings": "2",
+            "numOfColors": "5",
+            "issues": [
+                "Cluttered Layout",
+                "Poor Responsiveness",
+                "Difficulty Accessing Information"
+            ],
+            "improvements": "Use English as it is a universal language"
+        },
+        {
+            "description": "there are too many colors",
+            "ratings": "3",
+            "numOfColors": "7",
+            "issues": [
+                "Cluttered Layout",
+                "Unappealing Design"
+            ],
+            "improvements": "Use lesser colors"
+        },
+        {
+            "description": "fonts and colors are messy",
+            "ratings": "2",
+            "numOfColors": "6",
+            "issues": [
+                "Confusing Navigation",
+                "Cluttered Layout",
+                "Unappealing Design"
+            ],
+            "improvements": "Use lesser colors"
+        }
+    ]
+}
