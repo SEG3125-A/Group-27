@@ -4,7 +4,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 code {
@@ -16,13 +16,35 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: grey;
-  height: 75px;
+  background-color: rgb(79, 194, 50);
+  height: 100px;
 }
 
-.link {
+#tennislogo {
+  width: 90px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.nav:nth-last-child(1), .nav:nth-last-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navlink {
   text-decoration: none;
   color: white;
-  font-size: larger;
+  font-size: 30px;
   margin-left: 20px;
+}
+
+.login {
+  margin-left: auto;
+}
+
+#loginicon {
+  margin-right: 20px;
+  width: 40px;
+  height: auto;
 }
