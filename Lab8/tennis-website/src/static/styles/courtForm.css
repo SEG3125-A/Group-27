@@ -26,7 +26,7 @@ hr {
 .court-form {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 150vh;
 }
 
 .dates-container {
@@ -62,7 +62,7 @@ hr {
 }
 
 form {
-    width: 75%;
+    width: 150vh;
 }
 
 .form-inputs {
