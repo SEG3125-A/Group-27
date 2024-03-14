@@ -47,7 +47,7 @@ export const CourtReservationForm = () => {
               <input type="radio" id='rentals-no' name='rentals' value="no"/><label htmlFor="rentals-no">No</label>
             </div>
             <label htmlFor="special-req">Special Request:</label>
-            <textarea name="special-req" id="" cols="30" rows="10"></textarea>
+            <textarea name="special-req" id="" cols="30" rows="5"></textarea>
           </div>
           <hr />
           <h1>Payment Details</h1>
@@ -60,9 +60,9 @@ export const CourtReservationForm = () => {
             <input type="month" id="expiry-date" />
             <label htmlFor="cvv">CVV:</label>
             <input type="text" id="cvv" />
+            <button type='submit'>Confirm Reservation</button>
+            <button type='button'>Cancel</button>
           </div>
-          <button type='submit'>Confirm Reservation</button>
-          <button type='button'>Cancel</button>
       </form>
     </div>
   )

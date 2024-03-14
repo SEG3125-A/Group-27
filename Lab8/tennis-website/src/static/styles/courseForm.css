@@ -1,0 +1,42 @@
+#course-form-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#course-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+hr {
+    width: 150vh;
+    border: rgb(133, 133, 133) solid 1.5px;
+}
+
+.course-form {
+    display: flex;
+    flex-direction: column;
+    width: 150vh;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .group-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+    align-items: center;
+} */
