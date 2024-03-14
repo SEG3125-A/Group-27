@@ -1,0 +1,72 @@
+#court-form-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#court-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+hr {
+    width: 150vh;
+    border: rgb(133, 133, 133) solid 1.5px;
+}
+
+.court-form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.dates-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#date {
+    width: 500px;
+    text-align: center;
+}
+
+.date-input {
+    margin-left: 300px;
+}
+
+.time-slots {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timeButton {
+    background-color: #777777; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+form {
+    width: 75%;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
