@@ -1,0 +1,43 @@
+#slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#events-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: inherit;
+    width: 90%;
+    height: auto;
+    align-self: center;
+}
+
+.grid-item {
+    background-color: inherit;
+    padding-right: 20px;
+}
+
+#contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locimg {
+    width: 300px;
+    height: auto;
+}
+
+.section-name {
+    margin-left: 20px;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
-import tennislogo from "../static/tennis-logo.png"
-import loginicon from "../static/login-icon.png"
+import tennislogo from "../static/images/tennis-logo.png"
+import loginicon from "../static//images/login-icon.png"
+import '../static/styles/navbar.css'
 
 const Navbar = () => {
     return (
