@@ -82,6 +82,7 @@ html {
     height: 350px;
 }
 
+<<<<<<< Updated upstream
 .black-square {
     display: flex;
     flex-direction: column;
@@ -137,6 +138,10 @@ form {
     color: orange;
     text-align: center;
     padding-bottom: 5px;
+=======
+.navbar-nav .nav-link {
+    font-size: larger; /* Adjusts font size to be smaller */
+>>>>>>> Stashed changes
 }
 
 
