@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav>
             <img id="tennislogo" src={tennislogo} alt="" />
             <Link to="/" className='navlink'>Home</Link>
-            <Link to="/courseRegisterForm" className='navlink'>Courses</Link>
+            <Link to="/courses" className='navlink'>Courses</Link>
             <Link to="/courtReserveForm" className='navlink'>Courts</Link>
             <Link to="/" className='navlink'>Forums</Link>
             <Link to="/" className='navlink login'>Login/Signup</Link>
