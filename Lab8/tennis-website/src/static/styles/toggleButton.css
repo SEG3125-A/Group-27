@@ -1,0 +1,26 @@
+.toggle-button {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: #808080; 
+    color: black;
+    padding: 5px 10px 5px 5px; 
+    border-radius: 10px;
+}
+
+.toggle-button span {
+    padding: 0 5px;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+.clickable a {
+    color: white; /* Or any color that indicates it is clickable */
+    text-decoration: none;
+}
+
+.clickable a:hover {
+    text-decoration: underline;
+}

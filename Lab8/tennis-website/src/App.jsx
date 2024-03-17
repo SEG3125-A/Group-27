@@ -6,6 +6,11 @@ import CourseRegistrationForm from './routes/CourseRegistrationForm.jsx'
 import Forum from './routes/Forum.jsx'
 import Timer from './routes/Timer.jsx'
 import Navbar from './components/Navbar.jsx'
+import Courses2Kids from './routes/Courses2Kids.jsx'
+import Courses2Adults from './routes/Courses2Adults.jsx'
+import Courses from './routes/Courses.jsx'
+import Courses3 from './routes/Courses3.jsx'
+import CourtsViewing from './routes/CourtsViewing.jsx'
 
 const App = () => {
     return <div>
@@ -17,6 +22,12 @@ const App = () => {
                 <Route exact path='/courseRegisterForm' Component={CourseRegistrationForm}></Route>
                 <Route exact path='/Forum' Component={Forum}></Route>
                 <Route exact path='/Timer' Component={Timer}></Route>
+                <Route exact path='/Courses' Component={Courses}></Route>
+                <Route exact path='/Courses2Kids' Component={Courses2Kids}></Route>
+                <Route exact path='/Courses2Adults' Component={Courses2Adults}></Route>
+                <Route exact path='/Courses3' Component={Courses3}></Route>
+                <Route exact path='/CourtsViewing' Component={CourtsViewing}></Route>
+
             </Routes>
         </Router>
     </div>
