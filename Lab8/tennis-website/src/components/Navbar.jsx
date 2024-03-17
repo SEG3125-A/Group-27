@@ -11,7 +11,7 @@ const Navbar = () => {
             <Link to="/" className='navlink'>Home</Link>
             <Link to="/courses" className='navlink'>Courses</Link>
             <Link to="/CourtsViewing" className='navlink'>Courts</Link>
-            <Link to="/" className='navlink'>Forums</Link>
+            <Link to="/Forum" className='navlink'>Forums</Link>
             <Link to="/" className='navlink login'>Login/Signup</Link>
             <img id="loginicon" src={loginicon} alt="" />
         </nav>
