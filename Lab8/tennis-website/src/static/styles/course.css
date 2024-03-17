@@ -10,8 +10,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    padding: 50px 250px 50px 250px;
-    font-size: 1em;
+    padding: 50px 250px 10px 250px;
+    font-size: 20px;
 
 }
 
@@ -29,8 +29,14 @@
 }
 
 .image-block img {
-    width: 300px; /* Adjust width as needed */
+    width: 300px; 
     height: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.image-block img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .caption {

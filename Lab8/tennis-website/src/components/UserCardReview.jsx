@@ -1,17 +1,33 @@
-import React from "react";
-import '../static/styles/card.css'
+import React from 'react';
+import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
+import '../static/styles/userCardReview.css'
 
-const UserCardReview = ({ title, imageUrl, description, link }) => {
+
+const UserCard = ({user, review, imageUrl}) => {
     return (
-        <div className="card">
-            <img src={imageUrl} alt="Card image" className="card-img" />
-            <div className="card-content">
-                <h3 className="card-title">{title}</h3>
-                <p className="card-description">{description}</p>
-                <a href={link} className="card-link">Learn More</a>
-            </div>
+      <section className="user-details">
+        <div className="user-image">
+        <img src={imageUrl} alt="Card image" className="card-img" />
         </div>
+        <div className="user-info">
+          <h1 className="user-name">{user}</h1>
+          <div className="orange-stars">
+                ★★★★★
+          </div>
+          <div> {review} </div>
+        </div>
+      </section>
     );
-};
+  };
+  
+  
+  const UserReview = ({user, review, imageUrl}) => {
+    return (
+      <div className = 'userreview'>
+        <UserCard user={user} review={review} imageUrl={imageUrl}/>
+      </div>
+    );
+  };
 
-export default UserCardReview;
+  
+  export default UserReview;

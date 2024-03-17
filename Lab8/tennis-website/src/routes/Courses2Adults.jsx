@@ -12,23 +12,23 @@ export const Courses2Adults = () => {
         <ToggleButton currentPage="Adults" />
           <h1 className='section-name'>Beginner</h1>
           <div id='events-container'>
-            <Card 
-                title="Example Card"
+          <Card 
+                title="Beginner Course 1"
                 imageUrl="https://example.com/image.jpg"
-                description="This is a description of the card content."
-                link="https://example.com"
+                description="Began your tennis journey with us!"
+                link="../Courses3"
             />
             <Card 
-                title="Example Card"
+                title="Beginner Course 2"
                 imageUrl="https://example.com/image.jpg"
                 description="This is a description of the card content."
-                link="https://example.com"
+                link="../Courses3"
             />
             <Card 
-                title="Example Card"
+                title="Beginner Course 3"
                 imageUrl="https://example.com/image.jpg"
                 description="This is a description of the card content."
-                link="https://example.com"
+                link="../Courses3"
             />
           </div>
         </div>
@@ -37,22 +37,22 @@ export const Courses2Adults = () => {
           <h1 className='section-name'>Intermediate</h1>
           <div id='events-container'>
             <Card 
-                title="Example Card"
+                title="Intermediate Course 1"
                 imageUrl="https://example.com/image.jpg"
-                description="This is a description of the card content."
-                link="https://example.com"
+                description="Level up your tennis game with us!"
+                link="../Courses3"
             />
             <Card 
-                title="Example Card"
+                title="Intermediate Course 2"
                 imageUrl="https://example.com/image.jpg"
                 description="This is a description of the card content."
-                link="https://example.com"
+                link="../Courses3"
             />
             <Card 
-                title="Example Card"
+                title="Intermediate Course 3"
                 imageUrl="https://example.com/image.jpg"
                 description="This is a description of the card content."
-                link="https://example.com"
+                link="../Courses3"
             />
           </div>
         </div>
@@ -60,22 +60,22 @@ export const Courses2Adults = () => {
           <h1 className='section-name'>Advanced</h1>
           <div id='events-container'>
             <Card 
-                title="Example Card"
+                title="Advanced Course 1"
                 imageUrl="https://example.com/image.jpg"
-                description="This is a description of the card content."
-                link="https://example.com"
+                description="This course is for advanced learners of tennis."
+                link="../Courses3"
             />
             <Card 
-                title="Example Card"
+                title="Advanced Course 2"
                 imageUrl="https://example.com/image.jpg"
                 description="This is a description of the card content."
-                link="https://example.com"
+                link="../Courses3"
             />
             <Card 
-                title="Example Card"
+                title="Advanced Course 3"
                 imageUrl="https://example.com/image.jpg"
                 description="This is a description of the card content."
-                link="https://example.com"
+                link="../Courses3"
             />
           </div>
         </div>
