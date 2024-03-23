@@ -1,8 +1,8 @@
 .filter-container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 90%; /* Adjust based on your needs */
-    border-radius: 5px; /* Optional: for rounded corners */
+    width: 90%; 
+    border-radius: 5px; 
     overflow: hidden; /* Ensures content does not spill outside the border */
     padding: 20px;
     margin: 0 auto; /* Centers the container horizontally */
@@ -10,7 +10,7 @@
 }
 
 label {
-    padding: 0 10px; /* This adds padding to the left and right of each label */
+    padding: 0px 10px; /* This adds padding to the left and right of each label */
   }
   
 
@@ -28,7 +28,7 @@ label {
 .users-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10%; /* Adjust the gap between items */
+    gap: 20%; /* Adjust the gap between items */
     margin-bottom: 50px;
     justify-content: center; /* Centers the items horizontally */
   }

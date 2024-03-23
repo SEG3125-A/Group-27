@@ -1,0 +1,133 @@
+.forum-card {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto; /* margin-top for spacing from the navigation bar */
+    background-color: beige;
+  }
+  
+  
+  .user-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  
+  .right-column {
+    flex-grow: 1;
+    padding-left: 20px; /* Space between columns */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* space out the top-row and user-actions */
+  }
+  
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-tags {
+    display: flex;
+    gap: 10px; 
+  }
+
+  h3 {
+    padding: 0; 
+    margin: 0;
+  }
+  
+  
+  .tag {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    padding: 5px 10px; 
+    font-size: 0.8rem; 
+  }
+  
+
+  
+  .user-actions {
+    display: flex;
+    flex-direction: column; /* aligns upvotes and buttons in a column */
+    align-items: flex-start; /* aligns items to the start of the flex container */
+  }
+  
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between; /* Puts a space between the buttons */
+    margin-top: 10px; /* Space from the upvote count to buttons */
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .action-button:hover {
+    background-color: #367c39; 
+  }
+  
+  @media (max-width: 768px) {
+    .forum-card {
+      flex-direction: column;
+    }
+  
+    .right-column {
+      padding-left: 0;
+    }
+  
+    .top-row, .user-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .action-buttons {
+      flex-direction: row;
+    }
+  }
+
+
+  .forum-container {
+    max-width: 800px;
+    margin: auto; /* Center the forum card and components below it */
+  }
+  
+  .description {
+    width: 100%; /* Take up full width of the container */
+    margin-top: 20px; /* Space between the beige box and the paragraph */
+  }
+  
+  .comment-box {
+    margin-top: 20px; /* Space between the paragraph and the input box */
+    text-align: center; /* Centering the input box */
+  }
+  
+  .comment-input {
+    width: 90%; /* Take up full width of the container */
+    padding: 10px; /* Padding inside the input box */
+    margin-top: 30px;
+    margin-bottom: 10px; /* Space between the input box and the button */
+    border: 1px solid #ccc; /* Border for the input box */
+    border-radius: 4px; /* Rounded corners for the input box */
+  }
+  
+  .submit-comment {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border for the button */
+    background-color: #4CAF50; /* Background color for the button */
+    color: white; /* Text color for the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+    

@@ -4,6 +4,7 @@ import Home from "./routes/Home.jsx"
 import CourtReservationForm from './routes/CourtReservationForm.jsx' 
 import CourseRegistrationForm from './routes/CourseRegistrationForm.jsx'
 import Forum from './routes/Forum.jsx'
+import ForumPost from './routes/ForumPost.jsx'
 import Timer from './routes/Timer.jsx'
 import Navbar from './components/Navbar.jsx'
 import Courses2Kids from './routes/Courses2Kids.jsx'
@@ -21,6 +22,7 @@ const App = () => {
                 <Route exact path='/courtReserveForm' Component={CourtReservationForm}></Route>
                 <Route exact path='/courseRegisterForm' Component={CourseRegistrationForm}></Route>
                 <Route exact path='/Forum' Component={Forum}></Route>
+                <Route exact path='/ForumPost' Component={ForumPost}></Route>
                 <Route exact path='/Timer' Component={Timer}></Route>
                 <Route exact path='/Courses' Component={Courses}></Route>
                 <Route exact path='/Courses2Kids' Component={Courses2Kids}></Route>

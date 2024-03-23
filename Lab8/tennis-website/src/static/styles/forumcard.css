@@ -60,22 +60,27 @@
   }
   
   .action-button {
-    flex-grow: 1; /* Allows the button to grow and fill the space */
-    padding: 10px; /* Adjusts the padding inside the buttons */
+    flex-grow: 1;
+    padding: 10px;
     border-radius: 20px;
-    border: None;
-    background-color: #4CAF50; /* Example green background color */
-    color: white; /* Text color for contrast */
-    /* Common styles for buttons */
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Ensure proper button alignment */
+    width: 100%; /* Make the button fill the container */
   }
   
+  /* Adjust the width of the buttons if needed */
   .action-button.upvote {
-    flex-basis: 40%; /* Sets a base width for the 'Upvote' button */
+    flex-basis: 40%;
   }
   
   .action-button.full-post {
-    flex-basis: 60%; /* Sets a base width for the 'See full post' button */
+    flex-basis: 60%;
   }
+  
 
 
   
