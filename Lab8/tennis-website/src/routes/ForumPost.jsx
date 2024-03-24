@@ -1,6 +1,5 @@
 import React from 'react';
 import "../static/styles/forumpost.css";
-import ForumCard from '../components/ForumCard';
 import woman_pic1 from "../static/images/avatar_w1.jpg";
 
 const ForumPost = ({ imageUrl, userName, userDays, userTimings, userMatchTypes }) => {

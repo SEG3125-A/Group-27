@@ -51,7 +51,7 @@ hr {
 }
 
 .timeButton {
-    background-color: #777777; /* Green */
+    background-color: #777777;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -61,6 +61,10 @@ hr {
     font-size: 16px;
 }
 
+/* button.click {
+    background-color: #28a745; 
+} */
+
 form {
     width: 150vh;
 }
@@ -69,4 +73,32 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+input, select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button#submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 7vh;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(118, 232, 118);
+}
+
+button#cancel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 7vh;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(235, 66, 66);
+}
+
+.invalid {
+    border: 2px solid red;
+}
+  
 
