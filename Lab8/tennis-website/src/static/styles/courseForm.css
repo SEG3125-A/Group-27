@@ -34,9 +34,30 @@ hr {
     flex-direction: column;
 }
 
-/* .group-input {
-    display: flex;
-    flex-direction: row;
-    justify-content: ;
-    align-items: center;
-} */
+button#submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 7vh;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(118, 232, 118);
+}
+
+button#cancel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 7vh;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(235, 66, 66);
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+  

@@ -12,8 +12,6 @@ import Courses2Adults from './routes/Courses2Adults.jsx'
 import Courses from './routes/Courses.jsx'
 import Courses3 from './routes/Courses3.jsx'
 import CourtsViewing from './routes/CourtsViewing.jsx'
-import { useTranslation } from 'react-i18next';
- // Path to your i18next configuration file
 
 const App = () => {
     // const { t } = useTranslation();

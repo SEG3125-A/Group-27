@@ -1,9 +1,13 @@
 nav {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-color: rgb(87, 136, 74);
     height: 100px;
+    top: 0;
+    z-index: 1000;
   }
   
 #tennislogo {
