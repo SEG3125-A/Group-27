@@ -1,11 +1,12 @@
 import React from 'react';
 import TennisCourt from '../components/TennisCourt';
+import pic from "../static/images/tenniscourt.jpg";
 
 export const CourtsViewing = () => {
     return (
     <div>
     <TennisCourt
-  imageUrl='../static/images/courseImg.jpg'
+  imageUrl={pic}
   courtNumber={1}
   schedule={{
     1: ['7:30am', '8:30am', '9:30am', '10:30am', '11:30am', '12:30pm', '1:30pm'],
@@ -18,7 +19,7 @@ export const CourtsViewing = () => {
   }}
 />
     <TennisCourt
-  imageUrl='../static/images/courseImg.jpg'
+  imageUrl={pic}
   courtNumber={2}
   schedule={{
     1: ['7:30am', '8:30am', '9:30am', '10:30am', '11:30am', '12:30pm', '1:30pm'],
@@ -31,7 +32,7 @@ export const CourtsViewing = () => {
   }}
 />
     <TennisCourt
-  imageUrl='../static/images/courseImg.jpg'
+  imageUrl={pic}
   courtNumber={3}
   schedule={{
     1: ['7:30am', '8:30am', '9:30am', '10:30am', '11:30am', '12:30pm', '1:30pm'],
@@ -44,7 +45,7 @@ export const CourtsViewing = () => {
   }}
 />
     <TennisCourt
-  imageUrl='../static/images/courseImg.jpg'
+  imageUrl={pic}
   courtNumber={4}
   schedule={{
     1: ['7:30am', '8:30am', '9:30am', '10:30am', '11:30am', '12:30pm', '1:30pm'],

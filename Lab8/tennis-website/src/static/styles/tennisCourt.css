@@ -6,7 +6,7 @@
     padding: 20px;
     border: 1px solid #e0e0e0; /* Lighter border color */
     border-radius: 5px;
-    background-color: #f9f9f9; /* Light background for the card */
+    background-color: beige; /* Light background for the card */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     width: calc(100% - 40px);
     box-sizing: border-box;
@@ -15,7 +15,7 @@
   .court-image-section {
     flex: 1;
     position: relative;
-    margin-right: 20px;
+    margin-right: 5px;
   }
   
   .court-image-section img {
